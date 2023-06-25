@@ -48,7 +48,7 @@ const App = () => {
             {/* HEADER LESSER */}
             {screenSize.width <= 600 ?
                 (<header className='header w-full h-full flex flex-col text-center justify-center' 
-                    style={{backgroundImage: `url(${header_bg_m.src})`,
+                    style={{backgroundImage: `url(${header_bg_m})`,
                     width: '100vw',
                     height: '100vh',
                     backgroundSize: 'contain',
@@ -85,7 +85,7 @@ const App = () => {
             :
             (
                 <header className='header flex flex-col text-center justify-center' 
-                    style={{backgroundImage: `url(${header_bg_d.src})`,
+                    style={{backgroundImage: `url(${header_bg_d})`,
                     width: '100vw',
                     height: '100vh',
                     backgroundSize: 'contain',
