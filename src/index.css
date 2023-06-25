@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --ft-BaiJam: 'Bai Jamjuree', sans-serif;
+
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+}
+
+body {
+    font-family: var(--ft-BaiJam);
+    margin: 0;
+    text-align: center;
+}
+
+.header {
+    height: 600px;
+}
+
+.hero-buttons {
+    cursor: pointer;
+}
+
+.footer {
+    background-color: hsl(197, 23%, 94%);
+}
+
+.options {
+    cursor: pointer;
+}
+
+.option:hover {
+    color: var(--Strong-Cyan);
+}
+
+.icon-social {
+    cursor: pointer;
+}
+
+.icon-social:hover {
+    background: var(--Strong-Cyan);
+}
+
+
+@media screen and (width > 600px) {
+    
+    body{
+        margin: 0;
+    }
+
+    .hero-buttons {
+        /* width: 1000px; */
+        cursor: pointer;
+    }
+
+    .header {
+        width: 100%;
+        height: 100%;
+    }
+
+    .comp-img {
+        left: -8%;
+    }
+
+    .device-feat {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .icon-logo {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1;
+    }
+    .options {
+        cursor: pointer;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    footer {
+        background-color: hsl(197, 23%, 94%);
+    }
+    
+    .option:hover {
+        color: var(--Strong-Cyan);
+    }
+    
+    .icon-social {
+        cursor: pointer;
+    }
+    
+    .icon-social:hover {
+        background: var(--Strong-Cyan);
+    }
+}
